@@ -1,0 +1,18 @@
+{
+  "name": "lala/recursivechildnodes",
+  "description": "",
+  "type": "neos-package",
+  "require": {
+    "neos/neos": "^4.3 || ^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lala\\RecursiveChildNodes\\": "Classes/"
+    }
+  },
+  "extra": {
+    "neos": {
+      "package-key": "Lala.RecursiveChildNodes"
+    }
+  }
+}
