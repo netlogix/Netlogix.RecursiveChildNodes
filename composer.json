@@ -1,6 +1,6 @@
 {
     "name": "lala/recursivechildnodes",
-    "description": "",
+    "description": "Neos Package to recursively generate childNodes on node creation",
     "type": "neos-package",
     "license": [
         "MIT"
