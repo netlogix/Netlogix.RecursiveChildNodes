@@ -24,16 +24,13 @@ class RecursiveChildNodeService
 
 	/**
 	 * @param NodeInterface $node
-	 * @param null $nodeTypeConfiguration
 	 * @throws NodeNotFoundException
 	 * @throws \Neos\ContentRepository\Exception\NodeExistsException
 	 * @throws \Neos\ContentRepository\Exception\NodeTypeNotFoundException
 	 */
-	public function createRecursiveChildNodes(NodeInterface $node, $nodeTypeConfiguration = null)
+	public function createRecursiveChildNodes(NodeInterface $node)
 	{
-		if ($nodeTypeConfiguration === null) {
-			$nodeTypeConfiguration = $node->getNodeType()->getFullConfiguration();
-		}
+        $nodeTypeConfiguration = $node->getNodeType()->getFullConfiguration();
 
 		if (!$this->hasRecursiveChildNodeDefiniton($nodeTypeConfiguration)) {
 			return;
