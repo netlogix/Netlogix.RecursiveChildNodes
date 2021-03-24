@@ -1,12 +1,14 @@
 <?php
-namespace Lala\RecursiveChildNodes\Domain\Service;
+declare(strict_types=1);
+
+namespace Netlogix\RecursiveChildNodes\Domain\Service;
 
 use Neos\ContentRepository\Domain\Model\NodeInterface;
 use Neos\ContentRepository\Domain\Service\NodeTypeManager;
 use Neos\ContentRepository\Domain\Utility\NodePaths;
 use Neos\ContentRepository\Utility;
 use Neos\Flow\Annotations as Flow;
-use Lala\RecursiveChildNodes\Error\NodeNotFoundException;
+use Netlogix\RecursiveChildNodes\Error\NodeNotFoundException;
 
 /**
  * @Flow\Scope("singleton")
