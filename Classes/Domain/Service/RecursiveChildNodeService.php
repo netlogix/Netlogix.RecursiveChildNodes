@@ -42,7 +42,7 @@ class RecursiveChildNodeService
 			$targetNode = $node->getNode($childNodeName);
 
 			if (!$targetNode) {
-				throw new NodeNotFoundException('Cannot create recursive childNodes: targetNode "%s" does not exist', 1539332890);
+				throw new NodeNotFoundException(sprintf('Cannot create recursive childNodes: targetNode "%s" does not exist', $childNodeName), 1539332890);
 			}
 
 			foreach ($configuration as $childNodeDefinition) {
@@ -74,7 +74,7 @@ class RecursiveChildNodeService
 				$targetNode = $createdChildNode->getNode($subChildNodeName);
 
 				if (!$targetNode) {
-					throw new NodeNotFoundException('Cannot create recursive childNodes: targetNode "%s" does not exist', 1539332890);
+					throw new NodeNotFoundException(sprintf('Cannot create recursive childNodes: targetNode "%s" does not exist', $subChildNodeName), 1539332890);
 				}
 
 				foreach ($subConfiguration as $subChildNodeDefinition) {
