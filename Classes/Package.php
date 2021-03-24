@@ -1,10 +1,12 @@
 <?php
-namespace Lala\RecursiveChildNodes;
+declare(strict_types=1);
+
+namespace Netlogix\RecursiveChildNodes;
 
 use Neos\ContentRepository\Domain\Model\Node;
 use Neos\Flow\Core\Bootstrap;
 use Neos\Flow\Package\Package as BasePackage;
-use Lala\RecursiveChildNodes\Domain\Service\RecursiveChildNodeService;
+use Netlogix\RecursiveChildNodes\Domain\Service\RecursiveChildNodeService;
 
 class Package extends BasePackage
 {

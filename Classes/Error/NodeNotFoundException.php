@@ -1,5 +1,7 @@
 <?php
-namespace Lala\RecursiveChildNodes\Error;
+declare(strict_types=1);
+
+namespace Netlogix\RecursiveChildNodes\Error;
 
 use Neos\Flow\Exception;
 

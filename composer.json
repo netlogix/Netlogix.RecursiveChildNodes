@@ -1,5 +1,5 @@
 {
-    "name": "lala/recursivechildnodes",
+    "name": "netlogix/recursivechildnodes",
     "description": "Neos Package to recursively generate childNodes on node creation",
     "type": "neos-package",
     "license": [
@@ -10,12 +10,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Lala\\RecursiveChildNodes\\": "Classes/"
+            "Netlogix\\RecursiveChildNodes\\": "Classes/"
         }
     },
     "extra": {
         "neos": {
-            "package-key": "Lala.RecursiveChildNodes"
+            "package-key": "Netlogix.RecursiveChildNodes"
         }
     }
 }

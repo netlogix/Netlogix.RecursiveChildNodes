@@ -1,4 +1,4 @@
-# Recursive Child Nodes
+# Netlogix.RecursiveChildNodes
 
 The purpose of this package is to ease the creation of new nodeTypes that can have
 multiple childNodes but require at least one. A good example might be a nodeType Event
@@ -8,7 +8,7 @@ To automatically create child nodes inside the `dates` ContentCollection when
 creating a new Event, the following configuration could be used:
 
 ```yaml
-'Lala.NodeTypes:Event':
+'Netlogix.NodeTypes:Event':
   superTypes:
     'Neos.Neos:Document': true
 
@@ -16,12 +16,12 @@ creating a new Event, the following configuration could be used:
     recursiveChildNodes: # Recursive child nodes can be configured here
       dates: # Name of the first childNode
         -
-          type: 'Lala.NodeTypes:EventDate'
+          type: 'Netlogix.NodeTypes:EventDate'
           options:
             recursiveChildNodes: # Infinite recursion, yay!
               items:
                 -
-                  type: 'Lala.NodeTypes:SomeOtherNodeType'
+                  type: 'Netlogix.NodeTypes:SomeOtherNodeType'
 
   ui:
     label: 'Event'
@@ -33,7 +33,7 @@ creating a new Event, the following configuration could be used:
       type: 'Neos.Neos:ContentCollection'
       constraints:
         '*': false
-        'Lala.NodeTypes:EventDate': true
+        'Netlogix.NodeTypes:EventDate': true
 
     main:
       constraints:
