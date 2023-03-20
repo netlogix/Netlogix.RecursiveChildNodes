@@ -17,5 +17,6 @@
         "neos": {
             "package-key": "Netlogix.RecursiveChildNodes"
         }
-    }
+    },
+    "abandoned": "flowpack/nodetemplates"
 }
