@@ -1,3 +1,6 @@
+# DEPRECATION NOTICE
+This package is no longer maintained. Please use [Flowpack.NodeTemplates](https://github.com/Flowpack/Flowpack.NodeTemplates) instead.
+
 # Netlogix.RecursiveChildNodes
 
 The purpose of this package is to ease the creation of new nodeTypes that can have
